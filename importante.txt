@@ -1,0 +1,4 @@
+Alterar no Regedit
+
+18:32:12  [mysql] 	Found Path: C:\tools\mysql\current\bin\mysqld MySQL
+18:32:12  [mysql] 	Expected Path: c:\xampp\mysql\bin\mysqld.exe --defaults-file=c:\xampp\mysql\bin\my.ini mysql
