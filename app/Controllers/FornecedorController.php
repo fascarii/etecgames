@@ -124,14 +124,14 @@ class FornecedorController extends BaseController
 
 
         $codfornecedor = $request->getPost('codForn');
-        $codFornAlterar = $request->getPost('codFornAlterar');
+        $codFornAlterar = $request->getPost('codForn');
 
         if ($request->getPost('codForn')) {
             $this->deletarFornecedor($codfornecedor);
             return redirect()->to(base_url('FornecedorController/todosFornecedores'));
         }
 
-        if ($request->getPost('codFornAlterar')) {
+        if ($request->getPost('codForn')) {
             return $this->alterarFornecedor($codFornAlterar);
             return redirect()->to(base_url('FornecedorController/todosFornecedores'));
         }
