@@ -12,13 +12,13 @@
                 <td><?php echo ($fornecedor->nomeForn) ?></td>
                 <td>
                     <form method="POST">
-                        <input type="hidden" name="codFornAlterarCod" readonly value="<?php echo ($fornecedor->codForn) ?> ">
+                        <input type="hidden" name="codFornAlterar" readonly value="<?php echo ($fornecedor->codForn) ?> ">
                         <button type="submit" class="btn btn-secondary">Alterar <i class="bi bi-pencil"></i></button>
                     </form>
                 </td>
                 <td>
                     <form method="POST">
-                        <input type="hidden" name="codForn" value="<?php echo ($fornecedor->codForn) ?> ">
+                        <input type="hidden" name="codFornDel" value="<?php echo ($fornecedor->codForn) ?> ">
                         <button type="submit" class="btn btn-danger">Deletar<i class="bi bi-trash"></i></button>
                     </form>
                 </td>

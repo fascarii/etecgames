@@ -1,7 +1,7 @@
 <form method="POST">
     <div>
         <label for="codForn" class="form-label">Digite o Código do Fornecedor</label>
-        <input type="number" name="codForn" id="codforBusca" class="form-control" placeholder="Exemplo: 123">
+        <input type="number" name="codFornBusca" id="codforBusca" class="form-control" placeholder="Exemplo: 123">
     </div>
     <div class="col-12">
         <button type='submit' class="btn btn-primary mt-3">Buscar</button>
@@ -34,7 +34,7 @@
             </td>
             <td>
                 <form method="POST">
-                    <input type="hidden" name="codForn" value="<?php echo ($codForn) ?> ">
+                    <input type="hidden" name="codFornDel" value="<?php echo ($codForn) ?> ">
                     <button type="submit" class="btn btn-danger">Deletar <i class="bi bi-trash"></i></button>
                 </form>
             </td>

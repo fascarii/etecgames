@@ -2,7 +2,7 @@
 
     <div class="mb-3">
         <label class="form-label" for="codigofornecedorinput">Código: </label>
-        <input class="form-control .col-md" type="text" name="codForn" id="codigofornecedorinput" value="<?php echo ($fornecedor->codForn) ?>">
+        <input class="form-control .col-md" type="text" name="codFornAlterar" id="codigofornecedorinput" readonly value="<?php echo ($fornecedor->codForn) ?>">
     </div>
     <div>
         <label class="form-label" for="nomefornecedorinput">Nome: </label>

@@ -43,7 +43,7 @@ class FornecedorController extends BaseController
     {
         $request  = service('request');
         
-        $codForn = $request->getPost('codForn');
+        $codForn = $request->getPost('codFornAlterar');
         $nomeForn = $request->getPost('nomeForn');
         $emailForn = $request->getPost('emailForn');
         $foneForn = $request->getPost('foneForn');
@@ -75,7 +75,7 @@ class FornecedorController extends BaseController
     public function deletarFornecedor($codfornecedor = null)
     {
         $request = service('request');
-        $codfornecedor = $request->getPost('codForn');
+        $codfornecedor = $request->getPost('codFornDel');
 
         if (is_null($codfornecedor)) {
             return redirect()->to(base_url('FornecedorController/todosFornecedores'));
@@ -96,7 +96,7 @@ class FornecedorController extends BaseController
         $data['fornecedores'] = $registros;
 
         $request  = service('request');
-        $codfornecedor = $request->getPost('codForn');
+        $codfornecedor = $request->getPost('codFornDel');
         $codFornAlterar = $request->getPost('codFornAlterar');
 
         if ($codfornecedor) {
@@ -118,20 +118,20 @@ class FornecedorController extends BaseController
     {
         $request  = service('request');
         $FornecedorModel = new \App\Models\FornecedorModel();
-        $codForn = $request->getPost('codForn');
+        $codForn = $request->getPost('codFornBusca');
         $registros = $FornecedorModel->find($codForn);
         $data['fornecedor'] = $registros;
 
 
-        $codfornecedor = $request->getPost('codForn');
-        $codFornAlterar = $request->getPost('codForn');
+        $codfornecedor = $request->getPost('codFornDel');
+        $codFornAlterar = $request->getPost('codFornAlterar');
 
-        if ($request->getPost('codForn')) {
+        if ($request->getPost('codFornDel')) {
             $this->deletarFornecedor($codfornecedor);
             return redirect()->to(base_url('FornecedorController/todosFornecedores'));
         }
 
-        if ($request->getPost('codForn')) {
+        if ($request->getPost('codFornAlterar')) {
             return $this->alterarFornecedor($codFornAlterar);
             return redirect()->to(base_url('FornecedorController/todosFornecedores'));
         }
@@ -139,7 +139,7 @@ class FornecedorController extends BaseController
 
 
         echo view('header');
-        echo view('listaCodForn', $data);
+        echo view('listaCodForn',$data);
         echo view('footer');
     }
 }
