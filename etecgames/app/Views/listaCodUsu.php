@@ -7,21 +7,12 @@
         <button type='submit' class="btn btn-primary mt-3">Buscar</button>
     </div>
 </form>
-<<<<<<< HEAD
 <table class="table">
     <thead class="thead-dark">
         <tr>
 		<th>Código</th>
         <th>Email</th>
 		</tr>
-=======
-<table class="table mt-5">
-    <thead>
-        <th>Código</th>
-        <th>Email</th>
-        <th>Alterar</th>
-        <th>Deletar</th>
->>>>>>> 0e19dc4eb038660972e35333b09f9c53a2c38ff9
     </thead>
     <tbody>
         <?php
