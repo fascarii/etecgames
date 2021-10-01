@@ -1,6 +1,6 @@
 <h3 class="display-3">Cadastro de Fornecedores</h3>
 
-<form method="POST">
+<form class = "row row-cols-lg-auto g-3 align-items-center" method="POST">
   <div class="mb-3">
     <label for="nome" class="form-label">Nome</label>
     <input type="text" class="form-control" id="nome" name="nomeForn">

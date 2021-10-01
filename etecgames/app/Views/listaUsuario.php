@@ -1,7 +1,8 @@
 <h3 class="display-3">Lista de usuários</h3>
 
+<div class="table-responsive">
 <table class="table">
-    <thead>
+  <thead class="table-dark">
         <th>Código</th>
         <th>Email</th>
 		
@@ -16,16 +17,17 @@
                 <td>
                     <form method="POST">
                         <input type="hidden" name="codUsuAlterarCod" readonly value="<?php echo ($usuario->codusu) ?> ">
-                        <button type="submit" class="btn btn-secondary">Alterar <i class="bi bi-pencil"></i></button>
+                        <button type="submit" class="btn btn-secondary"> <i class="bi bi-pencil"></i></button>
                     </form>
                 </td>
                 <td>
                     <form method="POST">
                         <input type="hidden" name="codUsu" value="<?php echo ($usuario->codusu) ?> ">
-                        <button type="submit" class="btn btn-danger">Deletar<i class="bi bi-trash"></i></button>
+                        <button type="submit" class="btn btn-danger"><i class="bi bi-trash"></i></button>
                     </form>
                 </td>
             </tr>
         <?php endforeach; ?>
     </tbody>
 </table>
+</div>
