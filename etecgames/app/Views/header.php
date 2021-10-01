@@ -15,9 +15,9 @@
 
   <div class="container">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">GameEtec</a>
+          <a class="navbar-brand" href="">GameEtec</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -72,13 +72,6 @@
               </li>
             </ul>
             <ul>
-              <form class="d-flex">
-                <button class="btn btn-outline-dark" type="submit">
-                  <i class="bi bi-person-circle"></i>
-                  Login
-                  <i class="bi bi-unlock-fill"></i>
-                </button>
-              </form>
             </ul>
           </div>
         </div>

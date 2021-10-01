@@ -32,13 +32,13 @@
             <td>
                 <form method="POST">
                     <input type="hidden" name="codUsuAlterarCod" value="<?php echo ($codusu) ?> ">
-                    <button type="submit" class="btn btn-secondary">Alterar <i class="bi bi-pencil"></i></button>
+                    <button type="submit" class="btn btn-secondary"> <i class="bi bi-pencil"></i></button>
                 </form>
             </td>
             <td>
                 <form method="POST">
                     <input type="hidden" name="codUsu" value="<?php echo ($codusu) ?> ">
-                    <button type="submit" class="btn btn-danger">Deletar <i class="bi bi-trash"></i></button>
+                    <button type="submit" class="btn btn-danger"> <i class="bi bi-trash"></i></button>
                 </form>
             </td>
         </tr>
