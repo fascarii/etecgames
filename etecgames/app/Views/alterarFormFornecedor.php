@@ -1,3 +1,5 @@
+<h3 class="display-3">Editar Fornecedor</h3>
+
 <form method="POST">
 
     <div class="mb-3">

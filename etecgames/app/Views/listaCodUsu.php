@@ -1,3 +1,4 @@
+<h3 class="display-3">Pesquisar Usuários</h3>
 <form method="POST">
     <div>
         <label for="codusu" class="form-label">Digite o Código do usuário</label>
@@ -7,11 +8,15 @@
         <button type='submit' class="btn btn-primary mt-3">Buscar</button>
     </div>
 </form>
+
+
 <table class="table">
-    <thead class="thead-dark">
+    <thead class="thead-light">
         <tr>
 		<th>Código</th>
         <th>Email</th>
+		<th>Alterar</th>
+		<th>Deletar</th>
 		</tr>
     </thead>
     <tbody>

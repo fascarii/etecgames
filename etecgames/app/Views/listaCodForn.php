@@ -1,3 +1,5 @@
+<h3 class="display-3">Pesquisar Fornecedores</h3>
+
 <form method="POST">
     <div>
         <label for="codForn" class="form-label">Digite o Código do Fornecedor</label>

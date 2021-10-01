@@ -1,3 +1,5 @@
+<h3 class="display-3">Cadastro de Fornecedores</h3>
+
 <form method="POST">
   <div class="mb-3">
     <label for="nome" class="form-label">Nome</label>

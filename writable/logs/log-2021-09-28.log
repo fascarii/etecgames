@@ -1,0 +1,22 @@
+CRITICAL - 2021-09-28 07:51:39 --> Undefined variable: usuarios
+#0 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\app\Views\listaUsuario.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\system\Common.php(1271): CodeIgniter\View\View->render('listaUsuario', Array, true)
+#4 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\app\Controllers\FornecedorController.php(114): view('listaUsuario', Array)
+#5 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\system\CodeIgniter.php(928): App\Controllers\FornecedorController->todosFornecedores()
+#6 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FornecedorController))
+#7 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-09-28 07:55:43 --> Undefined variable: usuarios
+#0 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\app\Views\listaUsuario.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\system\Common.php(1271): CodeIgniter\View\View->render('listaUsuario', Array, true)
+#4 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\app\Controllers\FornecedorController.php(114): view('listaUsuario', Array)
+#5 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\system\CodeIgniter.php(928): App\Controllers\FornecedorController->todosFornecedores()
+#6 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FornecedorController))
+#7 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pwiii\etecgames08092021\etecgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

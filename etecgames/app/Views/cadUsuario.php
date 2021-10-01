@@ -1,3 +1,5 @@
+<h3 class="display-3">Cadastro de Usuários</h3>
+
 <form method="POST">
   <div class="mb-3">
     <label for="email" class="form-label">Email</label>

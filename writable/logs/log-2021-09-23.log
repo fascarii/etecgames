@@ -1,0 +1,35 @@
+CRITICAL - 2021-09-23 08:19:10 --> Trying to get property 'codusu' of non-object
+#0 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\app\Views\alterarFormUsuario.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\Common.php(1271): CodeIgniter\View\View->render('alterarFormUsua...', Array, true)
+#4 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\app\Controllers\UsuarioController.php(66): view('alterarFormUsua...', Array)
+#5 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\app\Controllers\UsuarioController.php(141): App\Controllers\UsuarioController->alterarUsuario('1 ')
+#6 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\CodeIgniter.php(928): App\Controllers\UsuarioController->listaCodUsuario()
+#7 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#8 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-09-23 09:19:33 --> Undefined variable: usuarios
+#0 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\app\Views\listaUsuario.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\Common.php(1271): CodeIgniter\View\View->render('listaUsuario', Array, true)
+#4 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\app\Controllers\UsuarioController.php(120): view('listaUsuario', Array)
+#5 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\CodeIgniter.php(928): App\Controllers\UsuarioController->todosUsuarios()
+#6 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-09-23 09:20:47 --> Trying to get property 'codusu' of non-object
+#0 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\app\Views\alterarFormUsuario.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\Common.php(1271): CodeIgniter\View\View->render('alterarFormUsua...', Array, true)
+#4 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\app\Controllers\UsuarioController.php(66): view('alterarFormUsua...', Array)
+#5 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\app\Controllers\UsuarioController.php(141): App\Controllers\UsuarioController->alterarUsuario('2 ')
+#6 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\CodeIgniter.php(928): App\Controllers\UsuarioController->listaCodUsuario()
+#7 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#8 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\php_etec\etecgames08092021\etecgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
