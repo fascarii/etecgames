@@ -1,8 +1,8 @@
-<h3 class="display-3">Pesquisar Usuários</h3>
+<h3 class="display-3">Inserir Funcionário</h3>
 <form method="POST">
     <div>
         <label for="codusu" class="form-label">Digite o Código do usuário</label>
-        <input type="number" name="codusu" id="codusu" class="form-control" placeholder="Exemplo: 123">
+        <input type="number" name="codusu" value="codusu" id="codusu" class="form-control" placeholder="Exemplo: 123">
     </div>
     <div class="col-12">
         <button type='submit' class="btn btn-primary mt-3">Buscar</button>
@@ -12,47 +12,33 @@
 <?php
 
 $request = service('request');
-$codusu - isset($request->codusu) ? $request->$codusu : 0;
-if ($codusu > 0) {
-}
+$codusu = isset($usuario->codusu) ? $usuario->codusu : 0;
+$emailusu = isset($usuario->emailUsu) ? $usuario->emailUsu : '';
 
 ?>
 
+<div class="flex">
+    <form method="POST">
+
+        <div class="mb-3">
+
+            <label for="codusu" class="form-label">Código Usuário</label>
+            <input type="number" class="form-control" id="codusu" name="codusu" value="<?= $codusu?>" readonly>
+        </div>
+
+        <div class="mb-3">
+
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailusu" name="emailUsu" value="<?= $emailusu ?>" aria-describedby="nomeHelp">
+        </div>
+
+        <div class="mb-3">
+
+            <label for="fone" class="form-label">Fone</label>
+            <input type="tel" class="form-control" id="foneFun" name="foneFun" aria-describedby="foneHelp">
+        </div>
 
 
-
-<table class="table">
-    <thead class="thead-light">
-        <tr>
-            <th>Código</th>
-            <th>Email</th>
-            <th>Alterar</th>
-            <th>Deletar</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php
-        $codusu = isset($usuario->codusu) ? $usuario->codusu : "";
-        $emailUsu = isset($usuario->emailUsu) ? $usuario->emailUsu : "";
-        ?>
-
-
-        <tr>
-            <td><?php echo ($codusu) ?> </td>
-            <td><?php echo ($emailUsu) ?></td>
-            <td>
-                <form method="POST">
-                    <input type="hidden" name="codUsuAlterarCod" value="<?php echo ($codusu) ?> ">
-                    <button type="submit" class="btn btn-secondary"> <i class="bi bi-pencil"></i></button>
-                </form>
-            </td>
-            <td>
-                <form method="POST">
-                    <input type="hidden" name="codUsu" value="<?php echo ($codusu) ?> ">
-                    <button type="submit" class="btn btn-danger"> <i class="bi bi-trash"></i></button>
-                </form>
-            </td>
-        </tr>
-
-    </tbody>
-</table>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+</div>
