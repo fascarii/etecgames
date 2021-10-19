@@ -21,7 +21,7 @@ class FuncionarioController extends BaseController
         if ($request->getMethod() === 'post') {
             $FuncionarioModelo = new \App\Models\FuncionarioModel();
 
-            $FuncionarioModelo->set('codusu_FK', $request->getPost('codusu_FK'));
+            $FuncionarioModelo->set('codusu_FK', $request->getPost('codusu'));
             $FuncionarioModelo->set('nomeFun', $request->getPost('nomeFun'));
             $FuncionarioModelo->set('foneFun', $request->getPost('foneFun'));
 
@@ -46,11 +46,14 @@ class FuncionarioController extends BaseController
             $data['usuario'] = $registros;
         }
 
+        if ($request->getPost('nomeFun') && $request->getPost('foneFun')) {
+            $this->inserirFuncionario();
+        }
+
 
 
 
         echo view('header');
-        var_dump($registros);
         echo view('cadFuncionario', $data);
         echo view('footer');
     }

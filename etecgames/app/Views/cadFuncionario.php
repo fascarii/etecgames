@@ -1,3 +1,8 @@
+<div class="container" >
+
+<div class="row justify-content-center">
+
+<div class="col-9">
 <h3 class="display-3">Inserir Funcionário</h3>
 <form method="POST">
     <div>
@@ -34,6 +39,12 @@ $emailusu = isset($usuario->emailUsu) ? $usuario->emailUsu : '';
 
         <div class="mb-3">
 
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nomeFun" name="nomeFun" aria-describedby="nomeHelp">
+        </div>
+
+        <div class="mb-3">
+
             <label for="fone" class="form-label">Fone</label>
             <input type="tel" class="form-control" id="foneFun" name="foneFun" aria-describedby="foneHelp">
         </div>
@@ -41,4 +52,7 @@ $emailusu = isset($usuario->emailUsu) ? $usuario->emailUsu : '';
 
         <button type="submit" class="btn btn-primary">Cadastrar</button>
     </form>
+</div>
+</div>
+</div>
 </div>
