@@ -34,7 +34,7 @@ $emailusu = isset($usuario->emailUsu) ? $usuario->emailUsu : '';
         <div class="mb-3">
 
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="emailusu" name="emailUsu" value="<?= $emailusu ?>" aria-describedby="nomeHelp">
+            <input type="email" class="form-control" id="emailusu" name="emailUsu" value="<?= $emailusu ?>" aria-describedby="nomeHelp" readonly>
         </div>
 
         <div class="mb-3">
