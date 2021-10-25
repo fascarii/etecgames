@@ -50,9 +50,6 @@ class FuncionarioController extends BaseController
             $this->inserirFuncionario();
         }
 
-
-
-
         echo view('header');
         echo view('cadFuncionario', $data);
         echo view('footer');
