@@ -45,8 +45,6 @@ class FornecedorController extends BaseController
         
         $codForn = $request->getPost('codFornAlterar');
         $nomeForn = $request->getPost('nomeForn');
-        $emailForn = $request->getPost('emailForn');
-        $foneForn = $request->getPost('foneForn');
 
 
         $FornecedorModel = new \App\Models\FornecedorModel();
