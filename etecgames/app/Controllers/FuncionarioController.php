@@ -51,7 +51,7 @@ class FuncionarioController extends BaseController
             return redirect()->to(base_url('UsuarioController/todosUsuarios'));
         }
 
-        if ($request->getPost('codFunAlterarCod')) {
+        if ($request->getPost('codFunAlterar')) {
             return $this->funcionarioAlterar();
         }
 
@@ -105,11 +105,11 @@ class FuncionarioController extends BaseController
             $registros->foneFun = $fonefun;
             $FuncionarioModel->update($codfunAlterar, $registros);
 
-            return redirect()->to(base_url('UsuarioController/todosUsuarios'));
+            return redirect()->to(base_url('FuncionarioController/buscaPrincipalFuncionarioCod'));
         }
 
         echo view('header');
-        echo view('alterarFormUsuario', $data);
+        echo view('buscaCodFuncionario', $data);
         echo view('footer');
     }
 
