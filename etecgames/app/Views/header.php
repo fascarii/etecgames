@@ -41,7 +41,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="<?php echo base_url('../../FuncionarioController/listaCodFuncionario') ?>">Cadastro</a></li>
-                  <li><a class="dropdown-item" href="<?php echo base_url('../../FuncionarioController/listaCodFuncionario') ?>">Pesquisar por código</a></li>
+                  <li><a class="dropdown-item" href="<?php echo base_url('../../FuncionarioController/buscaPrincipalFuncionarioCod') ?>">Pesquisar por código</a></li>
                   <li><a class="dropdown-item" href="<?php echo base_url('../../FuncionarioController/listaCodFuncionario') ?>">Pesquisar por nome</a></li>
                 </ul>
               </li>
